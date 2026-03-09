@@ -1,0 +1,369 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1F646DD11AE8AAC6FF7FDF56 /* TranslatorViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48C4EBC9AC486F290EB75589 /* TranslatorViewModel.swift */; };
+		5C290123DEA5AB9A62BB018F /* PopUpTranslatorApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A40ED9CF44A6FEAEFFAED24 /* PopUpTranslatorApp.swift */; };
+		5F55262172165D30EA69FE9E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8C601FE7B6006C18339AEAA8 /* Assets.xcassets */; };
+		9DB887BAC932FC5110307407 /* KeyboardShortcutNames.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEB39364D4E139644551C2DE /* KeyboardShortcutNames.swift */; };
+		A5782100F44A4F7220E94EEB /* TranslatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D499FD9E3599A07593C486AA /* TranslatorView.swift */; };
+		B1B35FB142D0A8CECE741284 /* HotKey in Frameworks */ = {isa = PBXBuildFile; productRef = D150A147EACE0E828A5040A7 /* HotKey */; };
+		C051C5F87786936C57FAE8B1 /* PanelManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A80D3745CB39EA37F7A3EE49 /* PanelManager.swift */; };
+		D38AD4179C03145DD25DE551 /* FloatingPanel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FCE8845F6CBC60E69FEE3D9 /* FloatingPanel.swift */; };
+		F2948F6E5C4F6545454C52E0 /* TranslationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4344DA97A8FB7975FAED9591 /* TranslationService.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		161CE7A2E9F7FA02AC292304 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		3FCE8845F6CBC60E69FEE3D9 /* FloatingPanel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FloatingPanel.swift; sourceTree = "<group>"; };
+		4344DA97A8FB7975FAED9591 /* TranslationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TranslationService.swift; sourceTree = "<group>"; };
+		48C4EBC9AC486F290EB75589 /* TranslatorViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TranslatorViewModel.swift; sourceTree = "<group>"; };
+		6A40ED9CF44A6FEAEFFAED24 /* PopUpTranslatorApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopUpTranslatorApp.swift; sourceTree = "<group>"; };
+		8C601FE7B6006C18339AEAA8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A80D3745CB39EA37F7A3EE49 /* PanelManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PanelManager.swift; sourceTree = "<group>"; };
+		A93835EB09C9F87DC59D5550 /* PopUpTranslator.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = PopUpTranslator.entitlements; sourceTree = "<group>"; };
+		CEB39364D4E139644551C2DE /* KeyboardShortcutNames.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardShortcutNames.swift; sourceTree = "<group>"; };
+		D499FD9E3599A07593C486AA /* TranslatorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TranslatorView.swift; sourceTree = "<group>"; };
+		FBBA22D244DA43570299D4CF /* PopUpTranslator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PopUpTranslator.app; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		7F3A4A9D5FFBC72EFB9EDE23 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B1B35FB142D0A8CECE741284 /* HotKey in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0E33E709B20EB0132C4F8695 /* PopUpTranslator */ = {
+			isa = PBXGroup;
+			children = (
+				8C601FE7B6006C18339AEAA8 /* Assets.xcassets */,
+				3FCE8845F6CBC60E69FEE3D9 /* FloatingPanel.swift */,
+				161CE7A2E9F7FA02AC292304 /* Info.plist */,
+				CEB39364D4E139644551C2DE /* KeyboardShortcutNames.swift */,
+				A80D3745CB39EA37F7A3EE49 /* PanelManager.swift */,
+				A93835EB09C9F87DC59D5550 /* PopUpTranslator.entitlements */,
+				6A40ED9CF44A6FEAEFFAED24 /* PopUpTranslatorApp.swift */,
+				4344DA97A8FB7975FAED9591 /* TranslationService.swift */,
+				D499FD9E3599A07593C486AA /* TranslatorView.swift */,
+				48C4EBC9AC486F290EB75589 /* TranslatorViewModel.swift */,
+			);
+			path = PopUpTranslator;
+			sourceTree = "<group>";
+		};
+		45E6FD5C1126B79FF6598928 = {
+			isa = PBXGroup;
+			children = (
+				0E33E709B20EB0132C4F8695 /* PopUpTranslator */,
+				F5F33AC18DC6EB3D02EBC57F /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F5F33AC18DC6EB3D02EBC57F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FBBA22D244DA43570299D4CF /* PopUpTranslator.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		21690A434F82E85642902D1E /* PopUpTranslator */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 933CAAD61BB68579AFF91945 /* Build configuration list for PBXNativeTarget "PopUpTranslator" */;
+			buildPhases = (
+				3A9DD5E3F4BDB7264E38A105 /* Sources */,
+				BE957806D2F11E324014FCCF /* Resources */,
+				7F3A4A9D5FFBC72EFB9EDE23 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PopUpTranslator;
+			packageProductDependencies = (
+				D150A147EACE0E828A5040A7 /* HotKey */,
+			);
+			productName = PopUpTranslator;
+			productReference = FBBA22D244DA43570299D4CF /* PopUpTranslator.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B89DCD06871944734AC58296 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 1600;
+				TargetAttributes = {
+				};
+			};
+			buildConfigurationList = 0A74890FB64988C1337F1CE5 /* Build configuration list for PBXProject "PopUpTranslator" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = 45E6FD5C1126B79FF6598928;
+			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				E06713C9E3B92640A39D6ACB /* XCRemoteSwiftPackageReference "HotKey" */,
+			);
+			preferredProjectObjectVersion = 77;
+			productRefGroup = F5F33AC18DC6EB3D02EBC57F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				21690A434F82E85642902D1E /* PopUpTranslator */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BE957806D2F11E324014FCCF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5F55262172165D30EA69FE9E /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3A9DD5E3F4BDB7264E38A105 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D38AD4179C03145DD25DE551 /* FloatingPanel.swift in Sources */,
+				9DB887BAC932FC5110307407 /* KeyboardShortcutNames.swift in Sources */,
+				C051C5F87786936C57FAE8B1 /* PanelManager.swift in Sources */,
+				5C290123DEA5AB9A62BB018F /* PopUpTranslatorApp.swift in Sources */,
+				F2948F6E5C4F6545454C52E0 /* TranslationService.swift in Sources */,
+				A5782100F44A4F7220E94EEB /* TranslatorView.swift in Sources */,
+				1F646DD11AE8AAC6FF7FDF56 /* TranslatorViewModel.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		3317CEF828B4DBB0DBA4BDD5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = PopUpTranslator/PopUpTranslator.entitlements;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = PopUpTranslator/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MARKETING_VERSION = 1.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.popuptranslator.app;
+				SDKROOT = macosx;
+				SWIFT_VERSION = 5.9;
+			};
+			name = Release;
+		};
+		5F573B578B5493CB06E5EC89 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"DEBUG=1",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		82D09F5F662266225839FD52 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		E6175802836268F7B20A1C44 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = PopUpTranslator/PopUpTranslator.entitlements;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = PopUpTranslator/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MARKETING_VERSION = 1.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.popuptranslator.app;
+				SDKROOT = macosx;
+				SWIFT_VERSION = 5.9;
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0A74890FB64988C1337F1CE5 /* Build configuration list for PBXProject "PopUpTranslator" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5F573B578B5493CB06E5EC89 /* Debug */,
+				82D09F5F662266225839FD52 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		933CAAD61BB68579AFF91945 /* Build configuration list for PBXNativeTarget "PopUpTranslator" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E6175802836268F7B20A1C44 /* Debug */,
+				3317CEF828B4DBB0DBA4BDD5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		E06713C9E3B92640A39D6ACB /* XCRemoteSwiftPackageReference "HotKey" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/soffes/HotKey";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.2.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		D150A147EACE0E828A5040A7 /* HotKey */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E06713C9E3B92640A39D6ACB /* XCRemoteSwiftPackageReference "HotKey" */;
+			productName = HotKey;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = B89DCD06871944734AC58296 /* Project object */;
+}

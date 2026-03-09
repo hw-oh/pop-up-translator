@@ -1,0 +1,21 @@
+# Build
+.build/
+DerivedData/
+
+# Xcode
+xcuserdata/
+*.xcodeproj/xcuserdata/
+*.xcodeproj/project.xcworkspace/xcuserdata/
+*.xcodeproj/project.xcworkspace/xcshareddata/IDEWorkspaceChecks.plist
+
+# App bundle (built artifact)
+PopUpTranslator.app/
+
+# SPM
+Package.resolved
+
+# macOS
+.DS_Store
+
+# Cursor
+.cursor/
