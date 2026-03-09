@@ -8,7 +8,9 @@ struct TranslatorView: View {
     var body: some View {
         VStack(spacing: 0) {
             headerBar
+            languageBar
             content
+            footer
         }
         .background(Color(nsColor: .windowBackgroundColor))
         .clipShape(RoundedRectangle(cornerRadius: 12, style: .continuous))
@@ -72,6 +74,62 @@ struct TranslatorView: View {
         }
         .padding(.horizontal, 14)
         .padding(.vertical, 10)
+    }
+
+    // MARK: - Language Bar
+
+    private var languageBar: some View {
+        HStack(spacing: 6) {
+            languagePicker(selection: $viewModel.langA)
+            
+            Button {
+                viewModel.swapLanguages()
+            } label: {
+                Image(systemName: "arrow.left.arrow.right")
+                    .font(.system(size: 10, weight: .semibold))
+                    .foregroundStyle(.secondary)
+                    .frame(width: 22, height: 22)
+                    .background(Color.primary.opacity(0.05))
+                    .clipShape(Circle())
+            }
+            .buttonStyle(.plain)
+            .help("언어 교체")
+
+            languagePicker(selection: $viewModel.langB)
+        }
+        .padding(.horizontal, 14)
+        .padding(.bottom, 8)
+    }
+
+    private func languagePicker(selection: Binding<Language>) -> some View {
+        Menu {
+            ForEach(Language.all) { lang in
+                Button {
+                    selection.wrappedValue = lang
+                } label: {
+                    HStack {
+                        Text(lang.name)
+                        if selection.wrappedValue.code == lang.code {
+                            Image(systemName: "checkmark")
+                        }
+                    }
+                }
+            }
+        } label: {
+            Text(selection.wrappedValue.name)
+                .font(.system(size: 11, weight: .medium, design: .rounded))
+                .foregroundStyle(.primary.opacity(0.7))
+                .frame(maxWidth: .infinity)
+                .padding(.vertical, 5)
+                .background(Color.primary.opacity(0.04))
+                .clipShape(RoundedRectangle(cornerRadius: 6, style: .continuous))
+                .overlay(
+                    RoundedRectangle(cornerRadius: 6, style: .continuous)
+                        .strokeBorder(Color.primary.opacity(0.08), lineWidth: 0.5)
+                )
+        }
+        .menuStyle(.borderlessButton)
+        .fixedSize(horizontal: false, vertical: true)
     }
 
     // MARK: - Content
@@ -215,6 +273,31 @@ struct TranslatorView: View {
             .contentShape(Capsule())
         }
         .buttonStyle(.plain)
+    }
+
+    // MARK: - Footer
+
+    private var footer: some View {
+        HStack(spacing: 5) {
+            Text("made by hw-oh")
+                .font(.system(size: 9.5))
+
+            Text("|")
+                .font(.system(size: 9))
+
+            Button {
+                NSWorkspace.shared.open(URL(string: "https://github.com/hw-oh")!)
+            } label: {
+                GitHubIcon()
+                    .frame(width: 13, height: 13)
+            }
+            .buttonStyle(.plain)
+            .help("GitHub")
+        }
+        .foregroundStyle(Color.primary.opacity(0.35))
+        .frame(maxWidth: .infinity)
+        .padding(.bottom, 10)
+        .padding(.top, 4)
     }
 
     // MARK: - Error

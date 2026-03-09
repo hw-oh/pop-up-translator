@@ -39,19 +39,6 @@ final class TranslationService {
         return try parseResponse(data: data, targetLanguage: targetLanguage)
     }
 
-    func translateBoth(text: String) async -> (english: TranslationResult?, korean: TranslationResult?, error: Error?) {
-        do {
-            async let englishResult = translate(text: text, to: "en")
-            async let koreanResult = translate(text: text, to: "ko")
-
-            let en = try await englishResult
-            let ko = try await koreanResult
-            return (en, ko, nil)
-        } catch {
-            return (nil, nil, error)
-        }
-    }
-
     // Google Translate returns a nested JSON array:
     // [[["translated text","original text",null,null,10]],null,"detected_lang"]
     private func parseResponse(data: Data, targetLanguage: String) throws -> TranslationResult {
