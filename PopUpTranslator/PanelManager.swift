@@ -58,8 +58,8 @@ final class PanelManager: ObservableObject {
         guard let screen = NSScreen.main else { return }
 
         let visibleFrame = screen.visibleFrame
-        let x = visibleFrame.maxX - panelWidth - 12
-        let y = visibleFrame.maxY - panelHeight - 12
+        let x = visibleFrame.maxX - panelWidth - 8
+        let y = visibleFrame.maxY - panelHeight - 4
 
         panel.setFrameOrigin(NSPoint(x: x, y: y))
     }

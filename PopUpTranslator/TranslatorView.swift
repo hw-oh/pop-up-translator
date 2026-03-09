@@ -10,13 +10,11 @@ struct TranslatorView: View {
             headerBar
             content
         }
-        .background(.ultraThickMaterial)
-        .clipShape(RoundedRectangle(cornerRadius: 14, style: .continuous))
-        .shadow(color: .black.opacity(0.18), radius: 24, x: 0, y: 8)
-        .shadow(color: .black.opacity(0.06), radius: 2, x: 0, y: 1)
+        .background(Color(nsColor: .windowBackgroundColor))
+        .clipShape(RoundedRectangle(cornerRadius: 12, style: .continuous))
         .overlay(
-            RoundedRectangle(cornerRadius: 14, style: .continuous)
-                .strokeBorder(Color.white.opacity(0.2), lineWidth: 0.5)
+            RoundedRectangle(cornerRadius: 12, style: .continuous)
+                .strokeBorder(Color.primary.opacity(0.12), lineWidth: 0.5)
         )
         .onAppear {
             DispatchQueue.main.asyncAfter(deadline: .now() + 0.15) {
