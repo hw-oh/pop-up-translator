@@ -199,14 +199,17 @@ struct TranslatorView: View {
                 .frame(height: 0.5)
                 .padding(.horizontal, 8)
 
-            Text(viewModel.translatedText.isEmpty ? "..." : viewModel.translatedText)
-                .font(.system(size: 14))
-                .lineSpacing(4)
-                .foregroundStyle(viewModel.translatedText.isEmpty ? .tertiary : .primary)
-                .textSelection(.enabled)
-                .frame(maxWidth: .infinity, alignment: .leading)
-                .padding(.horizontal, 12)
-                .padding(.vertical, 10)
+            ScrollView(.vertical) {
+                Text(viewModel.translatedText.isEmpty ? "..." : viewModel.translatedText)
+                    .font(.system(size: 14))
+                    .lineSpacing(4)
+                    .foregroundStyle(viewModel.translatedText.isEmpty ? .tertiary : .primary)
+                    .textSelection(.enabled)
+                    .frame(maxWidth: .infinity, alignment: .leading)
+                    .padding(.horizontal, 12)
+                    .padding(.vertical, 10)
+            }
+            .frame(maxHeight: 300)
         }
         .background(
             RoundedRectangle(cornerRadius: 10, style: .continuous)
