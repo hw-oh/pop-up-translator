@@ -154,27 +154,29 @@ struct TranslatorView: View {
     // MARK: - Input
 
     private var inputSection: some View {
-        TextField("번역할 텍스트 입력...", text: $viewModel.inputText, axis: .vertical)
-            .font(.system(size: 13))
-            .lineLimit(1...5)
-            .textFieldStyle(.plain)
-            .focused($isInputFocused)
-            .padding(.horizontal, 10)
-            .padding(.vertical, 10)
-            .onChange(of: viewModel.inputText) { _, _ in
-                viewModel.onInputChanged()
-            }
-            .background(Color.primary.opacity(0.03))
-            .clipShape(RoundedRectangle(cornerRadius: 10, style: .continuous))
-            .overlay(
-                RoundedRectangle(cornerRadius: 10, style: .continuous)
-                    .strokeBorder(
-                        isInputFocused
-                            ? Color.accentColor.opacity(0.4)
-                            : Color.primary.opacity(0.08),
-                        lineWidth: 1
-                    )
-            )
+        ScrollView(.vertical) {
+            TextField("번역할 텍스트 입력...", text: $viewModel.inputText, axis: .vertical)
+                .font(.system(size: 13))
+                .textFieldStyle(.plain)
+                .focused($isInputFocused)
+                .onChange(of: viewModel.inputText) { _, _ in
+                    viewModel.onInputChanged()
+                }
+        }
+        .frame(minHeight: 36, maxHeight: 120)
+        .padding(.horizontal, 10)
+        .padding(.vertical, 10)
+        .background(Color.primary.opacity(0.03))
+        .clipShape(RoundedRectangle(cornerRadius: 10, style: .continuous))
+        .overlay(
+            RoundedRectangle(cornerRadius: 10, style: .continuous)
+                .strokeBorder(
+                    isInputFocused
+                        ? Color.accentColor.opacity(0.4)
+                        : Color.primary.opacity(0.08),
+                    lineWidth: 1
+                )
+        )
     }
 
     // MARK: - Result
